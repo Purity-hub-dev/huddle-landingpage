@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --violet: hsl(257 40% 49%);
+  --soft-margenta: hsl(300, 69%, 71%);
+  --family: 'Open Sans', sans-serif;
+  --font-family: 'Poppins', sans-serif;
+}
+header{
+  background: var(--violet);
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+.general-container{
+  padding: 2.5rem;
+}
+.flex-desk{
+  display: flex;
+  gap: 2rem;
+}
+.desktop{
+  margin-top: 50px;
+}
+.content h1{
+  width: 400px;
+  margin-top: 110px;
+  line-height: 3rem;
+  font-family: var(--font-family);
+  font-size: 32px;
+  color: white;
+}
+.content p{
+  width: 380px;
+  line-height: 1.5rem;
+  font-family: var(--family);
+  font-size: 14px;
+  color: white;
+}
+.content h1, p{
+  margin-bottom: 20px;
+}
+button{
+  padding: 12px;
+  color: rgba(0, 0, 255, 0.5);
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+button:hover{
+  background: var(--soft-margenta);
+  color: #ffffff;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+}
+.itags{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+.facebook, .twitter, .instagram{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.4rem;
+  font-size: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.facebook a, .twitter a, .instagram a{
+  color: #ffffff;
+}
+.facebook:hover{
+  border-color: var(--soft-margenta);
+  transition-timing-function: ease-in;
+}
+.twitter:hover{
+  border-color: var(--soft-margenta);
+  transition-timing-function: ease-in;
+}
+.instagram:hover{
+  border-color: var(--soft-margenta);
+  transition-timing-function: ease-in;
+}
+@media(max-width: 500px){
+  .general-container{
+  text-align: center;
+  justify-content: center;
+}
+  .desktop{
+  width: 375px;
+}
+  .flex-desk{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itags{
+  justify-content: center;
+  margin-top: 50px;
+}
+button{
+  width: 250px;
+  padding: 10px;
+}
+.content p{
+  font-size: 21px;
+}
+}
+
